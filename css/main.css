@@ -1,0 +1,256 @@
+/************************************
+GENERAL
+************************************/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+    max-width: 940px;
+    /* 0 margin space on top and bottom of element and auto means left and right side of elment have equal amounts of margin to be centeted */
+    margin: 0 auto; 
+    padding: 0 5%;
+} 
+
+a {
+    text-decoration: none;
+}
+
+img {
+     /* will fill width of parent container*/
+    max-width: 100%;
+}
+
+h3 {
+    margin: 0 0 1em 0;
+}
+
+
+/************************************
+HEADING
+************************************/
+
+/* to fix header spacing */
+header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 0;
+    /* stretch across entire page */
+    width: 100%;
+}
+
+#logo {
+    text-align: center;
+    margin: 0;    
+}
+
+h1 {
+    /* sans sherif is fallback in case changa one is down */
+    font-family: 'Change One', sans-serif;
+    /* 15 above below, 0 left and right */
+    margin: 15px 0;
+    /* em is relative to 15px */
+    font-size: 1.75em;
+    /* unbold headline (headline is bold in default */
+    font-weight: normal;
+    /* space between each line of text */
+    line-height: 0.8em;
+}
+
+h2 {
+    font-size: 0.75em;
+    /* -5 top closer, 0 left and right, 0 bottom */
+    margin: -5px 0 0;
+    font-style: normal;
+}
+
+
+
+/************************************
+NAVIGATION
+************************************/
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0;    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+}
+
+/* display block (push other elements out of the way) or inline (just text)*/
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    /* weight normal bold or a number */
+    font-weight: 800;
+    /* make links easier to tap */
+    padding: 15px 10px;
+}
+
+
+/************************************
+FOOTER
+************************************/
+
+footer {
+    font-size: 0.75em;
+    text-align: center;
+    /* clear both clears left and right sides of floats */
+    clear: both;
+    padding-top: 50px;
+    color: #ccc;    
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+
+
+/************************************
+PAGE: PORTFOLIO
+************************************/
+
+/* id selector */
+#gallery {
+    margin: 0;
+    padding: 0;
+    /* remove bullet points when set to none */
+    list-style: none;
+}
+
+#gallery li {
+    /* make elements appear side by side */
+    float: left;
+    /* regardless of window, each image will be 45% */
+    width: 45%;
+    /* margin on each side of 2.5% (5% total) */
+    margin: 2.5%;
+    background-color: #f5f5f5;
+    color: #bdc3c7;
+}
+
+#gallery li a p {
+    margin: 0;
+    /* space out */
+    padding: 5%;
+    font-size: 0.75em;
+    color: #bdc3c7;    
+}
+
+
+
+/************************************
+PAGE: ABOUT
+************************************/
+
+.profile-photo {
+    /* display block allows us to use auto in margin to center element on page similar to wrapper */
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 30px;
+    border-radius: 100%;
+}
+
+
+
+/************************************
+PAGE: CONTACT
+************************************/
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.contact-info a {
+    /* each image will take up space */
+    display: inline-block;
+    min-height: 20px;
+    /* background will repeat by default */
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    /* push text to right */
+    padding: 0 0 0 30px;
+    margin: 0 0 10px;
+}
+
+/* image inclusion techniques */
+.contact-info li.phone a {
+    /* .. goes up directory */
+    background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+    background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+    background-image: url('../img/twitter.png');
+}
+
+
+
+
+/************************************
+COLOR
+************************************/
+
+/* site body */
+body {
+    background-color: #fff;
+    color: #999;
+}
+
+/* green header */
+header {
+    background: #6ab47b;
+    border-color: #599a68;
+}
+
+/* nav background on mobile */
+nav {
+    background: #599a68;
+}
+
+/* logo text */
+h1, h2 {
+    color: #fff;
+}
+
+/* links */
+a {
+    color: #6ab47b;
+}
+
+/* pseudo class*/ 
+nav a, nav a:visited { 
+    color: #fff;
+}
+
+/* selected nav ling. any anchor inside nav that has selected in it will have these rules applied*/
+nav a.selected, nav a:hover {
+  color: #32673f;  
+}
+
+
+
+
+
+
+
+
+
+
